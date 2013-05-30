@@ -1,0 +1,14 @@
+{
+    "name": "tinytony",
+	"description": "A micro webservice for Texy! Post texy, get HTML",
+	"license": "MIT",
+	"authors": [
+		{"name": "Igor Hlina"}
+	],
+
+    "require": {
+		"php": ">=5.3.0",
+        "nette/nette": "~2.0",
+	    "dg/texy": "~2.2"
+    }
+}

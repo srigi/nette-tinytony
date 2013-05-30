@@ -1,0 +1,104 @@
+<style>
+	body { background-color:#F4F4F4; }
+	form { margin:3em auto; width:760px; }
+	.btn { margin:2em; text-align:center; }
+	.btn button { font-size:130%; width:50%; }
+	textarea { width:100%; }
+</style>
+
+<form action="/texy" method="post">
+	<div class="btn"><button>send</button></div>
+	<textarea name="texy" cols="80" rows="20">
+Texy!
+**********
+
+Lorem ipsum dolor sit amet,
+still the same paragraph.
+
+.{color:blue}
+Lorem ipsum dolor sit amet,
+ still the same paragraph, but wrapped with element `<br>`
+ using one space before
+
+> This is a blockquote with two paragraphs.
+>
+> 640 K should be enough for everyone
+
+> == Nested blocquotes with heading ==
+>
+> > Lorem ipsum dolor sit amet.
+> > Vestibulum enim wisi
+>
+> Back to the first level.
+
+[* http://texy.info/images/head-logo2.gif *] *** This is *description* under image
+Look at homepage:[http://texy.info]. Do you know "Nette":http://nette.org? "Write me":me@example.com
+
+--------
+
+Phrases
+=======
+*emphasis*
+
+**strong emphasis**
+
+***stronger emphasis***
+
+^^superscript^^ vs. __subscript__
+
+Quotes: >>Lorem Ipsum Dolores<<:www.lipsum.com
+
+Cite: As ~~Frank Borland~~ said, ...
+
+Lists
+=====
+
+a) Bird
+  I) Bird
+    - Red
+    - Green
+    - Blue
+  II) McHale
+  III) Parish
+b) McHale
+c) Parish
+  1) Bird
+  2) McHale
+  3) Parish
+
+Tables
+======
+
+|-----------------------------
+| First Name | Last Name | Age
+|----------------------------
+| Jesus      | Christ    | 33
+| Cecilie    | Svobodova | 74
+
+|-----------------------------
+| First Name | Last Name | Age
+|----------------------------
+| Bill                  || 50
+|^                       | 52
+| Jim        | Beam      | 70
+
+.{border:1px solid}
+| .{color: green} first col | second col      .>| third col | .{font-style:italic}
+| Adam                      | Eva .{color: blue}| Franta    |
+
+Code
+====
+
+/--html
+<em>example</em>: **this is not strong**
+\--
+
+/--php
+function reImage($matches) {
+	$content = $matches[1];
+	$align = $matches[5];
+	$href = $matches[6];
+}
+\---
+	</textarea>
+</form>

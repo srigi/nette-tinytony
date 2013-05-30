@@ -1,0 +1,21 @@
+php:
+  date.timezone: Europe/Bratislava
+
+
+nette:
+  container:
+    debugger: true
+
+  debugger:
+    maxDepth: 3
+
+  session:
+    start: false
+
+
+
+services:
+  textPreprocessor: TexyFactory::create
+
+
+parameters:
